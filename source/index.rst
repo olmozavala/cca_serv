@@ -3,15 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to HPC at CCA's documentation!
-======================================
+This is the official documentation of the HPC group at Centro de Ciencias de la Atm\'osfera
+=============================================================================================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
-
+   allservers
+   technical
 
 Indices and tables
 ==================
