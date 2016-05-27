@@ -1,31 +1,39 @@
 Servers summary
 ===============
 
+This page contains the public information about the servers that har part of
+the `Center <http://atmosfera.unam.mx>`_.
+
 .. free -m //Ver mem ram
 .. cat /etc/issue
 .. df -h
 .. cat /proc/cpuinfo
 
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| Name       | Principal Investigator                                                              | Desc                                                         |
-+============+=====================================================================================+==============================================================+
-| gom        | `Dr. Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Operational weather forecast (`HYCOM <https://hycom.org/>`_) |
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| ameyal     | `Dr. Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Repaldos de pronostico, corre pronostico de PEMEX            |
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| ehecatl    | `Dr. Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Almacenamiento TODO                                          |
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| amistli    | `Dr. Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Nuevo pronostico operativo (WRF)                             |
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| amoxtli    | `Dr. Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Portales del Grupo ioa                                       |
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| mandibulin | `Dr. Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Experimentos de HYCOM                                        |
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| quiyahuatl | `Dr. Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Viejo Pronostico Operativo Meteorologico y de Oleaje (WRF)   |
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| orion      | `Dr. Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Almacenamiento del proyecto SENER-CONACYT (Sec de Energia)   |
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| OWGIS      | `Dr. Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Servidor OWIGS, DB PostGIS, Centos 6.7                       |
-+------------+-------------------------------------------------------------------------------------+--------------------------------------------------------------+
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| Name       | Principal Investigator                                                          | Desc                                                          |
++============+=================================================================================+===============================================================+
+| gom        | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Operational weather forecast (`HYCOM <https://hycom.org/>`_)  |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| ameyal     | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Forecast backups, runs operational weather forecast for PEMEX |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| ehecatl    | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Backup                                                        |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| amistli    | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | New Operational Weather Forecast (WRF)                        |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| amoxtli    | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Websites for the IOA group                                    |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| mandibulin | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | For tests, mostly HYCOM                                       |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| quiyahuatl | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | New Operational Weather Forecast (WRF)                        |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| orion      | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Storage for the SENER-CONACYT project                         |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| OWGIS      | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | OWIGS server, PostGIS DB,                                     |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| Sauvignon  | `Graciela Arriaga <http://www.atmosfera.unam.mx/directorio/raga_g.html>`_       | TODO                                                          |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+| Cognac     | `Graciela Arriaga <http://www.atmosfera.unam.mx/directorio/raga_g.html>`_       | TODO                                                          |
++------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
+
 
 

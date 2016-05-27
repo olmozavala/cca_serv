@@ -13,11 +13,7 @@ Contents:
 
    allservers
    technical
+   cluster
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
