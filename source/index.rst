@@ -3,8 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-This is the official documentation of the HPC group at Centro de Ciencias de la Atm\'osfera
-=============================================================================================
+.. image:: ../images/cca_banner.jpg
+Official HPC's docs Group at Centro de Ciencias de la Atmósfera.
+================================================================
 
 Contents:
 
