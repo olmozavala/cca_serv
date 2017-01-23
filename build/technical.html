@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Technical information &mdash; documentación de HPC at CCA - 1.0.0</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="documentación de HPC at CCA - 1.0.0" href="index.html" />
+    <link rel="next" title="Cluster administration" href="cluster.html" />
+    <link rel="prev" title="Servers summary" href="allservers.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="technical-information">
+<h1>Technical information<a class="headerlink" href="#technical-information" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>This page contains a detailed techical information regarding servers and clusters at <a class="reference external" href="http://www.atmosfera.unam.mx/">CCA</a>.</p>
+<div class="section" id="servers">
+<h2>Servers<a class="headerlink" href="#servers" title="Enlazar permanentemente con este título">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="4%" />
+<col width="4%" />
+<col width="33%" />
+<col width="45%" />
+<col width="3%" />
+<col width="3%" />
+<col width="8%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Ip</th>
+<th class="head">OS</th>
+<th class="head">CPUs</th>
+<th class="head">HD</th>
+<th class="head">RAM</th>
+<th class="head">Location</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>gom</td>
+<td>53</td>
+<td><a class="reference external" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Red Hat</a> 4.4.7</td>
+<td>2 x <a class="reference external" href="http://ark.intel.com/products/47921/Intel-Xeon-Processor-X5660-12M-Cache-2_80-GHz-6_40-GTs-Intel-QPI">Xeon X 5660</a></td>
+<td>1.5 TB</td>
+<td>24 GB</td>
+<td>2nd Floor Building 2</td>
+</tr>
+<tr class="row-odd"><td>ameyal</td>
+<td>.238:22</td>
+<td><a class="reference external" href="https://www.centos.org/">CentOS</a> 6.3</td>
+<td>2 x <a class="reference external" href="http://ark.intel.com/products/64595/Intel-Xeon-Processor-E5-2670-20M-Cache-2_60-GHz-8_00-GTs-Intel-QPI">Xeon E5-2670</a></td>
+<td>78 TB</td>
+<td>64 GB</td>
+<td>2nd Floor Building 2</td>
+</tr>
+<tr class="row-even"><td>ehecatl</td>
+<td>.238:768</td>
+<td><a class="reference external" href="https://www.centos.org/">CentOS</a> 6.5</td>
+<td>2 x <a class="reference external" href="http://ark.intel.com/products/64591/Intel-Xeon-Processor-E5-2640-15M-Cache-2_50-GHz-7_20-GTs-Intel-QPI">Xeon E5-2640</a></td>
+<td>80 TB</td>
+<td>64 GB</td>
+<td>2nd Floor Building 2</td>
+</tr>
+<tr class="row-odd"><td>amistli</td>
+<td>.238:766</td>
+<td><a class="reference external" href="https://www.centos.org/">CentOS</a> 6.5</td>
+<td>4 x <a class="reference external" href="http://ark.intel.com/products/64603/Intel-Xeon-Processor-E5-4640-20M-Cache-2_40-GHz-8_00-GTs-Intel-QPI">Xeon E5-4640</a></td>
+<td>82 TB</td>
+<td>128 GB</td>
+<td>2nd Floor Building 2</td>
+</tr>
+<tr class="row-even"><td>amoxtli</td>
+<td>.222</td>
+<td><a class="reference external" href="http://www.ubuntu.com/server">Ubuntu Server</a> 14.04</td>
+<td>2 x <a class="reference external" href="http://ark.intel.com/products/64623/Intel-Xeon-Processor-E5-2470-20M-Cache-2_30-GHz-8_00-GTs-Intel-QPI">Xeon E5-2470</a></td>
+<td>11 TB</td>
+<td>128 GB</td>
+<td>2nd Floor Building 2</td>
+</tr>
+<tr class="row-odd"><td>mandibulin</td>
+<td>.238:770</td>
+<td><a class="reference external" href="https://www.opensuse.org/">Open Suse</a> 42.1</td>
+<td>2x Xeon E5-4110</td>
+<td>6.4 TB</td>
+<td>16 GB</td>
+<td>2nd Floor Building 2</td>
+</tr>
+<tr class="row-even"><td>quiyahuatl</td>
+<td>.236</td>
+<td><a class="reference external" href="https://www.centos.org/">CentOS</a> 6.4</td>
+<td>2 x <a class="reference external" href="http://ark.intel.com/products/64591/Intel-Xeon-Processor-E5-2640-15M-Cache-2_50-GHz-7_20-GTs-Intel-QPI">Xeon E5-2640</a></td>
+<td>1 TB</td>
+<td>32 GB</td>
+<td>2nd Floor Building 2</td>
+</tr>
+<tr class="row-odd"><td>orion</td>
+<td>.238:769</td>
+<td><a class="reference external" href="https://www.centos.org/">CentOS</a> 7</td>
+<td>2 x <a class="reference external" href="http://ark.intel.com/products/64595/Intel-Xeon-Processor-E5-2670-20M-Cache-2_60-GHz-8_00-GTs-Intel-QPI">Xeon E5-2670</a></td>
+<td>158 TB</td>
+<td>64 GB</td>
+<td>2nd Floor Building 2</td>
+</tr>
+<tr class="row-even"><td>OWGIS</td>
+<td>.238:765</td>
+<td><a class="reference external" href="https://www.centos.org/">CentOS</a> 6.7</td>
+<td>2 x <a class="reference external" href="http://ark.intel.com/products/64596/Intel-Xeon-Processor-E5-2690-20M-Cache-2_90-GHz-8_00-GTs-Intel-QPI">Xeon E5-2690</a></td>
+<td>1 TB</td>
+<td>26 GB</td>
+<td>2nd Floor Building 2</td>
+</tr>
+<tr class="row-odd"><td>Sauvignon</td>
+<td>.17</td>
+<td>Unknown</td>
+<td>31 x <a class="reference external" href="https://www.amd.com/Documents/AMD_Opteron_6000_Comparison.pdf">AMD Opteron 6272</a></td>
+<td>-1 GB</td>
+<td>14 GB</td>
+<td>1st Floor Building 1</td>
+</tr>
+<tr class="row-even"><td>Cognac</td>
+<td>.16</td>
+<td>Unknown</td>
+<td>23 x <a class="reference external" href="https://www.amd.com/Documents/AMD_Opteron_6000_Comparison.pdf">AMD Opteron 6168</a></td>
+<td>-1 GB</td>
+<td>16 GB</td>
+<td>1st Floor Building 1</td>
+</tr>
+<tr class="row-odd"><td>Morelos I</td>
+<td>##</td>
+<td>TODO</td>
+<td>Xeon 2.4 GHz</td>
+<td>120 GB</td>
+<td>1 GB</td>
+<td>1st Floor Building 1</td>
+</tr>
+<tr class="row-even"><td>T3610</td>
+<td>##</td>
+<td>TODO</td>
+<td><a class="reference external" href="http://ark.intel.com/products/64621/Intel-Xeon-Processor-E5-1620-10M-Cache-3_60-GHz-0_0-GTs-Intel-QPI">Xeon E5-1620</a></td>
+<td>500 GB</td>
+<td>8 GB</td>
+<td>Ismael Pérez office</td>
+</tr>
+<tr class="row-odd"><td>R2D9K9</td>
+<td>.219</td>
+<td><a class="reference external" href="https://www.centos.org/">CentOS</a> 6.7</td>
+<td><a href="#id9"><span class="problematic" id="id10">`16 x Intel 1.2 GHz`_</span></a></td>
+<td>120 GB</td>
+<td>132 GB</td>
+<td>TODO</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Technical information</a><ul>
+<li><a class="reference internal" href="#servers">Servers</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="allservers.html" title="capítulo anterior">Servers summary</a></li>
+      <li>Next: <a href="cluster.html" title="próximo capítulo">Cluster administration</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/technical.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Olmo S. Zavala Romero.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/technical.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

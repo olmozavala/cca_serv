@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Cluster administration &mdash; documentación de HPC at CCA - 1.0.0</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="documentación de HPC at CCA - 1.0.0" href="index.html" />
+    <link rel="prev" title="Technical information" href="technical.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="cluster-administration">
+<h1>Cluster administration<a class="headerlink" href="#cluster-administration" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="adding-new-users">
+<h2>Adding new users<a class="headerlink" href="#adding-new-users" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>These are the necessary steps to add a new user into Ometeotl. This cluster
+is available at port 23 of the 253 ip address. The code snippets use as an example a user called USER and the group GRP:</p>
+<ol class="arabic">
+<li><p class="first">Add the new user:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">sbin</span><span class="o">/</span><span class="n">useradd</span> <span class="o">-</span><span class="n">m</span> <span class="o">-</span><span class="n">G</span> <span class="n">GRP</span> <span class="o">-</span><span class="n">d</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">GRP</span><span class="o">/</span><span class="n">USER</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="n">USER</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Set password:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">passwd</span> <span class="n">USER</span>
+</pre></div>
+</div>
+</li>
+<li><dl class="first docutils">
+<dt>Add the user to its group, the available groups are:</dt>
+<dd><ul class="first last">
+<li><p class="first"><code class="docutils literal"><span class="pre">ioa</span></code> (<a class="reference external" href="http://grupo-ioa.atmosfera.unam.mx/">Interacción Océano Atmósfera</a>)</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">fqa</span></code> (<a class="reference external" href="http://www.atmosfera.unam.mx/fqa/">Fisicoquímica Atmosférica</a>)</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">imm</span></code> (<a class="reference external" href="http://www.atmosfera.unam.mx/grupos/interaccion_micro_mesoescala.html">Interacción Micro y Mesoescala</a>)</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">cca</span></code> for all others.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">gpasswd</span> <span class="o">-</span><span class="n">a</span> <span class="n">USER</span> <span class="n">GRP</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Ceate the storage folder in the corresponding group.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">storage</span><span class="o">/</span><span class="n">GRP</span>
+<span class="n">mkdir</span> <span class="n">USER</span>
+<span class="n">chown</span> <span class="n">USER</span><span class="p">:</span><span class="n">GRP</span> <span class="n">USER</span>
+<span class="n">chmod</span> <span class="mi">750</span> <span class="n">USER</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>5. Set default group. For this step, we first need to identify the id of the user&#8217;s
+group with <code class="docutils literal"><span class="pre">getent</span> <span class="pre">group</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">GRP</span></code>. After that we need to edit <code class="docutils literal"><span class="pre">/etc/passwd</span></code>
+and replace the OLD number with the NEW one, like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">vi</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">passwd</span>
+<span class="kn">from</span>    <span class="nn">USER</span><span class="p">:</span><span class="n">x</span><span class="p">:</span><span class="mi">569</span><span class="p">:</span><span class="n">OLD</span><span class="p">::</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">GRP</span><span class="o">/</span><span class="n">USER</span><span class="p">:</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span>
+<span class="n">to</span>      <span class="n">USER</span><span class="p">:</span><span class="n">x</span><span class="p">:</span><span class="mi">569</span><span class="p">:</span><span class="n">NEW</span><span class="p">:</span><span class="n">USER</span> <span class="n">COMPLETE</span> <span class="n">NAME</span><span class="p">:</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">GRP</span><span class="o">/</span><span class="n">USER</span><span class="p">:</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span>
+</pre></div>
+</div>
+<ol class="arabic" start="6">
+<li><p class="first">Finally, we need to update the shared folders of the cluster with:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cluster_update</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Cluster administration</a><ul>
+<li><a class="reference internal" href="#adding-new-users">Adding new users</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="technical.html" title="capítulo anterior">Technical information</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/cluster.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Olmo S. Zavala Romero.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/cluster.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
