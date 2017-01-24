@@ -1,8 +1,8 @@
 Servers summary
 ===============
 
-This page contains the public information about the servers that har part of
-the `Center <http://atmosfera.unam.mx>`_.
+This page contains the public information about the servers that are part of
+the `CCA <http://www.atmosfera.unam.mx>`_.
 
 .. free -m //Ver mem ram
 .. cat /etc/issue
@@ -10,7 +10,7 @@ the `Center <http://atmosfera.unam.mx>`_.
 .. cat /proc/cpuinfo
 
 +------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
-| Name       | Principal Investigator                                                          | Desc                                                          |
+| Name       | Principal Researcher                                                            | Description                                                   |
 +============+=================================================================================+===============================================================+
 | gom        | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | Operational weather forecast (`HYCOM <https://hycom.org/>`_)  |
 +------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
@@ -30,9 +30,9 @@ the `Center <http://atmosfera.unam.mx>`_.
 +------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
 | OWGIS      | `Jorge Zavala Hidalgo <http://www.atmosfera.unam.mx/directorio/zavala_j.html>`_ | OWIGS server, PostGIS DB,                                     |
 +------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
-| Sauvignon  | `Graciela Arriaga <http://www.atmosfera.unam.mx/directorio/raga_g.html>`_       | TODO                                                          |
+| Sauvignon  | `Graciela Raga <http://www.atmosfera.unam.mx/directorio/raga_g.html>`_          | TODO                                                          |
 +------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
-| Cognac     | `Graciela Arriaga <http://www.atmosfera.unam.mx/directorio/raga_g.html>`_       | TODO                                                          |
+| Cognac     | `Graciela Raga <http://www.atmosfera.unam.mx/directorio/raga_g.html>`_          | TODO                                                          |
 +------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
 | Morelos I  | `Ismael Pérez <http://www.atmosfera.unam.mx/directorio/perez_i.html>`_          | TODO                                                          |
 +------------+---------------------------------------------------------------------------------+---------------------------------------------------------------+
